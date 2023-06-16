@@ -9,7 +9,7 @@ Pre-requisites
 - Verilog
 ## Demo
 
-![Results](Floating_point_Adder_Result.png)
+![Results](Floating_Point_Addder_Result.png)
 ![Results](FPA.jpg)
 
 ## Features

@@ -30,6 +30,6 @@ module Adder_Hybrid_4Cla_20Rca(
     );
     wire c1;
  Carry_look_Ahead_4Bit  Add0 (.A(A[3:0]), .B(B[3:0]), .Cin(Cin), .Cout(c1), .Sum(Sum[3:0]));
- RCA20Bit Add1 (.A(A[23:4]), .B(B[23:4]), .Cin(c1), .Cout(Cout), .Sum(Sum[23:4]));   
+ Ripple_Carry_20Bit Add1 (.A(A[23:4]), .B(B[23:4]), .Cin(c1), .Cout(Cout), .Sum(Sum[23:4]));   
 
 endmodule

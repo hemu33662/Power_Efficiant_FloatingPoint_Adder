@@ -9,8 +9,7 @@ Pre-requisites
 - Verilog
 ## Demo
 
-![FoodandMedicine]([https://github.com/hemu33662/hackmantra/blob/main/Hackmantra.mp4])
-
+![Results](CLass_demo.png)
 
 ## Features
 

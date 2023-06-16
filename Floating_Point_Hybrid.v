@@ -6,9 +6,9 @@
 // Create Date: 30.04.2023 08:30:02
 // Design Name: 
 // Module Name: Floating_Point_Hybrid
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
+// Project Name: Power_Efficiant_FloatingPoint_Adder
+// Target Devices: xc7k70tfbv676-1
+// Tool Versions: Vivado v2022.2.2 (64-bit)
 // Description: 
 // 
 // Dependencies: 

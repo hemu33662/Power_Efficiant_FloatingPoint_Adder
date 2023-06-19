@@ -19,6 +19,7 @@ Pre-requisites
 - Ripple carry adder 4Bit.
 - Ripple carry adder 20Bit.
 - Floating point adder.
+- test bench
 
 
 

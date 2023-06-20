@@ -25,6 +25,7 @@ Pre-requisites
 
 ## Results
 
+The Verilog code in simulated in Xilinx Vivado 2022.2. The synthesis operation is performed in Cadence RTL compiler and different circuit parameters like area, power, and delay are estimated using TSMC 180nm technology. The estimated results are given in the following 
 - Power(nW)           : 1.361
 - Area(micrometer.s)  : 9433
 - Delay(ps)           : 13596.79

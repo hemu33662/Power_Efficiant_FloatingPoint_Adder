@@ -2,7 +2,7 @@
  Floating-point addition is a fundamental and basic operation in various applications of computer architecture,
  but it often consumes significant power, area, and delay. Optimizing the mantissa addition, a key component of floating-point addition
  can lead to significant improvements.
- we propose a hybrid RCA-CLA mantissa adder that adds the mantissa in the single precision floating point format using both
+We propose a hybrid RCA-CLA mantissa adder that adds the mantissa in single precision floating point format using both
  ripple carry adder (RCA) and carry look-ahead adder (CLA).
 
 
@@ -16,18 +16,18 @@ floating-point numbers encoded in the IEEE 754 standard format. Here's a general
 
 1. Define the Input and Output Ports:
    - Inputs: Two single-precision floating-point numbers (A and B) encoded in IEEE 754 format.
-   - Outputs: The sum of the two numbers (Result) encoded in IEEE 754 format.
+   - Outputs: The sum of the two numbers (Result) encoded in IEEE 754 format
 
 2. Decode IEEE 754 Format:
    - Extract the sign bit, exponent, and mantissa from both input numbers.
-   - Normalize the mantissas by adding an implicit leading bit to the mantissa value.
+   - Normalize the mantissa by adding an implicit leading bit to the mantissa value.
 
 3. Align Exponents:
    - Compare the exponents of the two input numbers to determine the larger exponent.
    - Shift the mantissa of the number with the smaller exponent to align the exponents.
 
 4. Perform Addition:
-   - Add the aligned mantissas together, considering the sign and overflow conditions.
+   - Add the aligned mantissa together, considering the sign and overflow conditions.
    - Adjust the exponent based on the normalization and rounding requirements.
    - Handle cases where the result overflows or underflows the range of the floating-point representation.
 
@@ -40,7 +40,7 @@ floating-point numbers encoded in the IEEE 754 standard format. Here's a general
    - Encode the normalized mantissa and exponent into the IEEE 754 format.
 
 7. Test and Verify:
-   - Create testbenches to simulate various floating-point addition scenarios.
+   - Create test benches to simulate various floating-point addition scenarios.
    - Validate the correctness of the design by comparing the expected results with the actual outputs.
 
 8. Synthesize and Implement:
@@ -70,7 +70,7 @@ Additionally, when designing complex arithmetic circuits like floating-point add
 
 ## Results
 
-The Verilog code in simulated in Xilinx Vivado 2022.2. The synthesis operation is performed in Cadence RTL compiler and different circuit parameters like area, power, and delay are estimated using TSMC 180nm technology. The estimated results are given in the following 
+The Verilog code is simulated in Xilinx Vivado 2022.2. The synthesis operation is performed in the Cadence RTL compiler and different circuit parameters like area, power, and delay are estimated using TSMC 180nm technology. The estimated results are given in the following 
 - Power(nW)           : 1.361
 - Area(micrometer.s)  : 9433
 - Delay(ps)           : 13596.79
